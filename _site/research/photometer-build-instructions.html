@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Test Tube Photometer</title>
+  <meta name="description" content="Building Instructions">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+  <body>
+      <div id="particles-js">
+  <div class="header">
+      <h1>
+        <span class="site-title">Test Tube Photometer</span>
+        <span class="site-description">Building Instructions</span>
+      </h1>
+<!--       <div class="header-icons">
+        <a aria-label="Send email" href="mailto:alexander.kutschera@gmail.com"><i class="icon fa fa-envelope"></i></a>
+        <a aria-label="My Twitter" target="_blank" href="https://twitter.com/alexwastooshort"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
+        <a aria-label="My Google Plus" target="_blank" href="#"><i class="icon fa fa-google-plus" aria-hidden="true"></i></a>
+        <a aria-label="My Github" target="_blank" href="https://github.com/vektorious"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+      </div> -->
+      <div class="header-links">
+        <a class="link" href="https://alexanderkutschera.com/#about" >About Me</a>
+        <a class="link" href="https://alexanderkutschera.com/#projects" >Other Projects</a>
+      </div>
+  </div>
+  <a class="down" href="#scroll" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+</div>
+
+      <section class="post" itemscope itemtype="http://schema.org/BlogPosting">
+          <article role="article" id="scroll" class="post-content" itemprop="articleBody">
+              <p><img align="right" src="https://raw.githubusercontent.com/vektorious/test_tube_photometer/master/pictures/cell_cover_fused.png" style="width: 500px ;" hspace="20" vspace="20" /></p>
+
+<p>This is the second part of the complete test tube photometer building instructions: The building and wiring instructions.
+But if you want you can go back to the <a href="https://alexanderkutschera.com/2017/12/09/photometer-shopping-list.html">the shopping list</a>. Here you find instructions for building the test tube photometer. If something is not completely clear to you, let us know and we will help you!</p>
+
+<h3 id="build-the-measuring-cell">Build the measuring cell</h3>
+<ul>
+  <li>
+    <p><strong>Assemble the housing</strong><br />
+The housing consists out of two parts, the main body and a sleeve. There are two respective holes in the main body in which you can place the sensor and the LED. Slowly pull the sleeve over the main body with the LED and Sensor pins sticking out (see picture above). Please remember the sensor orientation for the correct wiring of the pins!</p>
+  </li>
+  <li>
+    <p><strong>Wiring</strong>
+<img align="right" src="https://raw.githubusercontent.com/vektorious/test_tube_photometer/master/pictures/cell_wiring.jpg" style="width: 500px ;" hspace="20" vspace="20" /><br />
+Now you can start and solder wires to the sensor an LED pins. If you have problems soldering the sensor pins with the housing assembled you can remove the sensor, solder the wires and then assemble the housing. But then you might have to use some force to fit the soldered pins through the gaps.
+I labeled each wire to make it easier for me to connect them later.<br />
+<strong>You should end up with five wires from the sensor:</strong></p>
+    <ul>
+      <li>Power (V, pin 1)</li>
+      <li>Input/Additional Feedback (-In, pin 2)</li>
+      <li>Power/Ground (-V, pin 3)</li>
+      <li>Output (Output, pin 5)</li>
+      <li>Input/Ground (Common, pin 8)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="connect-it-to-the-microcontroller">Connect it to the microcontroller</h3>
+<p>Connect sensor pin 1 to 5V, pin 3 and 8 to ground. Sensor pin is connected to pin 5 with a 1 MΩ resistor in between (see circuit diagram on the right). You can now connect the sensor output (pin 5) to any analog input pin of your microcontroller and you are ready to measure light.
+<img align="right" src="https://raw.githubusercontent.com/vektorious/test_tube_photometer/master/pictures/sketch3.png" style="width: 300px ;" hspace="20" vspace="20" />
+Speaking of light, you still have to connect the LED with one of the digital output pins of the microcontroller to switch the light on and off.</p>
+
+<p>Well, that’s basically all you need to do to use your test tube photometer. If you like you can connect an LCD display to the microcontroller to display the measured values directly. I connected my photometer to a Raspberry Pi and let them communicate via the serial connection. The microcontroller runs <a href="https://github.com/vektorious/test_tube_photometer/tree/master/Arduino/test_tube_ALK">this script</a> and sends the data to the Pi which calculates the OD <a href="https://github.com/vektorious/test_tube_photometer/blob/master/python_scripts/dataStream_wo.py">with this python script</a> and writes everything to a .csv file.</p>
+
+<h3 id="thats-it-if-you-have-any-questions-or-feedback-dont-hesitate-to-contact-me">That’s it! If you have any questions or feedback, don’t hesitate to contact me!</h3>
+
+          </article>
+      </section>
+      <footer class="footer">
+    <p>&copy; Alexander Kutschera</p>
+    <p><a href="https://alexanderkutschera.com/impressum.html">Impressum</a> <a href="https://alexanderkutschera.com/privacy.html">Datenschutzerklärung</a></p>
+    <p>Build with Jekyll and <span class="love">❤</span> by Alexander Kutschera (Original from <a href="https://github.com/nrandecker">Nathan Randecker</a>)</p>
+</footer>
+<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="/assets/js/sweet-scroll.min.js"></script>
+<script src="/assets/js/main.js"></script>
+<!-- Google Analytics -->
+
+
+
+  </body>

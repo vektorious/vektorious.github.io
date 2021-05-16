@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Test Tube Photometer</title>
+  <meta name="description" content="Shopping List">
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+  <body>
+      <div id="particles-js">
+  <div class="header">
+      <h1>
+        <span class="site-title">Test Tube Photometer</span>
+        <span class="site-description">Shopping List</span>
+      </h1>
+<!--       <div class="header-icons">
+        <a aria-label="Send email" href="mailto:alexander.kutschera@gmail.com"><i class="icon fa fa-envelope"></i></a>
+        <a aria-label="My Twitter" target="_blank" href="https://twitter.com/alexwastooshort"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
+        <a aria-label="My Google Plus" target="_blank" href="#"><i class="icon fa fa-google-plus" aria-hidden="true"></i></a>
+        <a aria-label="My Github" target="_blank" href="https://github.com/vektorious"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a>
+      </div> -->
+      <div class="header-links">
+        <a class="link" href="https://alexanderkutschera.com/#about" >About Me</a>
+        <a class="link" href="https://alexanderkutschera.com/#projects" >Other Projects</a>
+      </div>
+  </div>
+  <a class="down" href="#scroll" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+</div>
+
+      <section class="post" itemscope itemtype="http://schema.org/BlogPosting">
+          <article role="article" id="scroll" class="post-content" itemprop="articleBody">
+              <p><img align="right" src="https://raw.githubusercontent.com/vektorious/test_tube_photometer/master/pictures/sketch.png" style="width: 500px ;" hspace="20" vspace="20" />
+This is the first part of the complete test tube photometer building instructions: The Shopping List.
+But if you want you can directly go to the <a href="https://alexanderkutschera.com/2017/12/21/photometer-build-instructions.html">building and wiring instructions</a>.</p>
+
+<p>Here you find a list of all the things you will need to build the test tube photometer, which we describe in our recent <a href="https://link.springer.com/article/10.1007%2Fs00284-017-1370-3">paper</a>. Additionally you will need standard electronics equipment including wires, resistors, breadboard for testing, soldering equipment and maybe some soldering experience.</p>
+
+<h3 id="what-do-you-need">What do you need?</h3>
+
+<h4 id="main-components">Main components</h4>
+<ul>
+  <li>
+    <p><strong>Arduino or similar microcontroller</strong><br />
+You need something to read the analog input of the sensors in a measuring routine. We used an <a href="https://store.arduino.cc/arduino-mega-adk-rev3">Arduino Mega</a> because it has 16 analog inputs.</p>
+  </li>
+  <li>
+    <p><strong>LCD display</strong><br />
+This one is optional but nice if you instantly want to see the measured values. It is useful for easy calibration and for discontinuous measurements with the photometer. You can use any available LCD which works well with the microcontroller. We used a standard HD44780 16x2 LCD Display.</p>
+  </li>
+  <li>
+    <p><strong>Measuring cell</strong><br />
+You obviously need at least one measuring cell to build the photometer but you can add as many as you like! You are just limited by the number of analog inputs on your microcontroller (one measuring cell requires one analog input!). All the components you need to build a measuring cell are listed above.
+<br /><br /></p>
+  </li>
+</ul>
+
+<h4 id="measuring-cell-components">Measuring cell components</h4>
+<p><img align="right" src="https://raw.githubusercontent.com/vektorious/test_tube_photometer/master/pictures/sketch2.png" style="width: 250px ;" hspace="120" vspace="130" />
+This are the components you need for one measuring cell</p>
+<ul>
+  <li>
+    <p><strong>Housing and housing cover</strong><br />
+We uploaded our 3D models for you at <a href="https://github.com/vektorious/test_tube_photometer/tree/master/3Dfiles">Github</a>. The housing has slots for the LED and the photodiode, which are fixed with the housing cover. If you do not have access to a 3D printer you can find service providers online. We printed it with standard black PLA and we recommend you to use black material, too, because it improves sensitivity of the system significantly. You might have to adjust the parameters of the housing to fit with the test tubes!</p>
+  </li>
+  <li>
+    <p><strong>LED</strong><br />
+It is really important to use a high quality LED because it determines the wavelength you are measuring with. We used a 740 nm LED from <a href="http://www.roithner-laser.com/index.html">Roithner LaserTechnik</a> (article number: <a href="http://www.roithner-laser.com/datasheets/led_div/infrared/led740-series.pdf">LED740-01AU</a>). If you prefer to measure at a different wavelength choose your LED accordingly!</p>
+  </li>
+  <li>
+    <p><strong>Photodiode</strong><br />
+This is the heart of the measuring cell. We used an <a href="http://www.ti.com/lit/ds/symlink/opt101.pdf">opt101</a> from Texas Instruments because it contains an on-chip operational amplifier, and responds to light in the range of 300–1100 nm (linear dependence between 400–800 nm!). We added a 1MΩ external resistor to achieve a DC gain of 2 million volts per ampere to optimize the output voltages.
+<br /></p>
+  </li>
+</ul>
+
+          </article>
+      </section>
+      <footer class="footer">
+    <p>&copy; Alexander Kutschera</p>
+    <p><a href="https://alexanderkutschera.com/impressum.html">Impressum</a> <a href="https://alexanderkutschera.com/privacy.html">Datenschutzerklärung</a></p>
+    <p>Build with Jekyll and <span class="love">❤</span> by Alexander Kutschera (Original from <a href="https://github.com/nrandecker">Nathan Randecker</a>)</p>
+</footer>
+<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="/assets/js/sweet-scroll.min.js"></script>
+<script src="/assets/js/main.js"></script>
+<!-- Google Analytics -->
+
+
+
+  </body>

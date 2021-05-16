@@ -1,0 +1,15 @@
+I"¯<p>This will be filled up with more information and pictures at a later stage.</p>
+
+<h3 id="scientific-projects">Scientific Projects</h3>
+<ul>
+  <li><a href="https://gitlab.com/alexander.kutschera/quickblast">QuickBlast</a> - Simple script to perform multiple BLASTP searches against a custom database</li>
+</ul>
+
+<h3 id="fun-projects">Fun Projects</h3>
+<ul>
+  <li><a href="https://github.com/vektorious/SpaceWebRadio">SpaceWebRadio</a> - Small web radio application for a Raspberry Pi</li>
+  <li><a href="https://github.com/vektorious/WaterMeButton">WaterMeButton</a> - Hacking an Amazon Dash Button to remind you to water your plants!</li>
+  <li><a href="https://github.com/vektorious/FM4_dl">FM4_dl</a> - Automatic downloader for <a href="https://fm4.orf.at/">FM4</a> radio shows</li>
+  <li><a href="https://www.youmagine.com/designs/3d-rack-designer">Rack Designer</a> - Short script to automatically design 3D models for racks</li>
+</ul>
+:ET

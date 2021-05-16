@@ -1,0 +1,13 @@
+I"<p>This will be filled up with more information at a later stage</p>
+
+<h3 id="complex-hardware-projects">Complex Hardware Projects</h3>
+<ul>
+  <li>Autonomous Raspberry Pi Outdoor Camera (work in progress)</li>
+  <li><a href="https://gitlab.com/alexander.kutschera/wakeuplite">Wakeup Light</a> - ESP32-based Wakeup Light (work in progress)</li>
+</ul>
+
+<h3 id="pcb-badges">PCB Badges</h3>
+<ul>
+  <li><a href="https://gitlab.com/alexander.kutschera/microbadge">Microbadge</a> - Temperature to light (work in progress)</li>
+</ul>
+:ET

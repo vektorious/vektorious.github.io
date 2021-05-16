@@ -1,0 +1,242 @@
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  @media only screen and (min-width: $cut) {
+    width: 80%;
+  }
+}
+
+.user-projects {
+  margin: 20px auto;
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+  }
+  h5 {
+    margin: 0;
+  }
+  li {
+    color: $main;
+    font-size: 1.1rem;
+  }
+  p {
+    margin-right: 5px;
+  }
+}
+
+.contents {
+  @media only screen and (min-width: $cut) {
+    margin-left: 0;
+    margin-top: -5%;
+    width: 48%;
+  }
+}
+
+.post-content {
+  @media only screen and (min-width: $cut) {
+    margin-left: 10%;
+    margin-top: 5%;
+    width: 80%;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 10px;
+  }
+  h1, h2, h3, h4, stong {
+      margin-top: 1em;
+      margin-left: 0%;
+      padding-top: 0.2em;
+      margin-bottom: 0.5em;
+      line-height: 1.25;
+      color: #333;
+  }
+}
+
+.contents-right {
+  @media only screen and (min-width: $cut) {
+    float: right;
+    margin-top: -5%;
+    width: 48%;
+  }
+}
+.contents-right-page {
+  @media only screen and (min-width: $cut) {
+    float: right;
+    margin-top: 0%;
+    margin-bottom: 20%;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 48%;
+  }
+}
+.images-right {
+  @media only screen and (min-width: $cut) {
+    float: right;
+
+    width: 48%;
+  }
+  img {
+    @media only screen and (min-width: $cut) {
+      float: right;
+    }
+  }
+}
+
+.images-left {
+  @media only screen and (min-width: $cut) {
+    float: left;
+    width: 48%;
+  }
+  img {
+    @media only screen and (min-width: $cut) {
+      float: left;
+    }
+  }
+}
+
+.images-left-page {
+  @media only screen and (min-width: $cut) {
+    float: left;
+    width: 48%;
+    margin-bottom: 10%;
+    margin-top: 0%;
+  }
+  img {
+    @media only screen and (min-width: $cut) {
+      float: left;
+    }
+  }
+}
+
+
+.huette-text {
+  @media only screen and (min-width: $cut) {
+    float: right;
+    margin: 0%;
+    width: 48%;
+  }
+  //border: 3px solid blue;
+
+}
+
+.huette-image {
+  @media only screen and (min-width: $cut) {
+    float: left;
+    width: 48%;
+  }
+  img {
+    @media only screen and (min-width: $cut) {
+      float: left;
+    }
+  }
+  //border: 3px solid blue;
+}
+
+.huette {
+  margin-top: 2%;
+  padding: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin: 0%;
+  }
+  h1, h2, h3, h4, stong {
+      margin-left: 5%;
+  }
+  p {
+    margin: 5%;
+    font-size: 20px;
+  }
+}
+
+.plot-full {
+  margin-top: 10%;
+  padding: 0%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  img {
+    max-width: 90%;
+    height: auto;
+
+
+.project-link {
+  display: block;
+  width: 120px;
+  margin: 10px 0px;
+  padding: 5px;
+  color: $main;
+  background-color: transparent;
+  border: 1px solid $main;
+  border-radius: 10px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+  &:hover {
+    background-color: $purple;
+    border-color: $purple;
+    color: #fff;
+    transition: color 0.3s ease-in,
+                background-color 0.3s ease-in,
+                border-color 0.3s ease-in;
+  }
+  &:active {
+    background-color: $purple;
+    border-color: $purple;
+    color: #fff;
+    transition: color 0.3s ease-in,
+                background-color 0.3s ease-in,
+                border-color 0.3s ease-in;
+  }
+}
+.exp-link {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  width: 60%;
+  padding: 10px;
+  color: $main;
+  background-color: transparent;
+  border: 1px solid $main;
+  border-radius: 10px;
+  font-size: 16px;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease-out,
+              background-color 0.3s ease-out,
+              border-color 0.3s ease-out;
+  &:hover {
+    background-color: $purple;
+    border-color: $purple;
+    color: #fff;
+    transition: color 0.3s ease-in,
+                background-color 0.3s ease-in,
+                border-color 0.3s ease-in;
+  }
+  &:active {
+    background-color: $purple;
+    border-color: $purple;
+    color: #fff;
+    transition: color 0.3s ease-in,
+                background-color 0.3s ease-in,
+                border-color 0.3s ease-in;
+  }
+}

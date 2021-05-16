@@ -1,0 +1,23 @@
+# Site settings
+title: Alexander Kutschera
+description: Place for my projects!
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+
+# User settings
+username: Alexander Kutschera
+user_description: I am a former PhD student of Technical University of Munich, combining microbiology, plant sciences and biochemistry in my research. Now I work as STEM-Manager in the federal district of Miesbach near Munich. I love 3D printing, recreating scientific instruments and getting lost on unnecessary nerdy projects.
+user_title: Developer Scientist
+email: alexander.kutschera@gmail.com
+twitter_username: alexwastooshort
+github_username:  vektorious
+gplus_username:  alexander.kutschera@gmail.com
+
+#Post settings
+permalink: /:categories/:title:output_ext
+
+# Google-analytics
+#google-analytics:
+  #id: "UA-117081048-1"
+
+exclude: ['package.json', 'src' , 'node_modules', 'rpi-script']
