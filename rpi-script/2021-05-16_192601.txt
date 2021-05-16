@@ -1,0 +1,17 @@
+Log File - Sun 16 May 2021 07:26:01 PM CEST
+Taking picture 2021-05-16_192601.jpg
+starting upload scipt at 19:26
+The temperature is: 12.5°C
+Copying the template file
+Opening folder in zennercloud
+This might cause an error if the folder already exists
+<?xml version="1.0" encoding="utf-8"?>
+<d:error xmlns:d="DAV:" xmlns:s="http://sabredav.org/ns">
+  <s:exception>Sabre\DAV\Exception\MethodNotAllowed</s:exception>
+  <s:message>The resource you tried to create already exists</s:message>
+</d:error>
+Uploading image to zennercloud
+../assets/img/huette.jpg 2592x1944 24bit N Exif  [OK] 2869965 --> 520252 bytes (81.87%), optimized.
+removing original img
+Replacing old huette.md file
+Committing changes
