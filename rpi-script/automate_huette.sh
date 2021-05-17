@@ -1,5 +1,5 @@
 #!/bin/bash
-sleep 10m
+sleep 100m
 cd  ~/Github/vektorious.github.io/
 echo "Checking Github repo"
 git pull
@@ -49,5 +49,5 @@ echo "Uploading log to zennercloud"
 curl -u rpi-huette:ueberdenwolken -T $log "https://cloud.alexanderkutschera.com/remote.php/dav/files/rpi-huette/RPi_Fotos/log/$log"
 # shutdown after 10 Minutes
 rm $log
-sleep 50m
+sleep 5m
 sudo shutdown
