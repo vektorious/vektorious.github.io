@@ -29,7 +29,6 @@ for year in years:
         min = year_data[temp_data["Date"].dt.month == month].min()
         max = year_data[temp_data["Date"].dt.month == month].max()
         av = np.average(year_data[temp_data["Date"].dt.month == month]["Temp"])
-        print(max["Temp"], min["Temp"])
         monthly = monthly.append({'min_temp': min["Temp"], 'max_temp': max["Temp"],
             'av_temp': av, 'month': month, 'year': year}, ignore_index=True)
 
