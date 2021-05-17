@@ -1,5 +1,5 @@
 #!/bin/bash
-sleep 100m
+sleep 10m
 cd  ~/Github/vektorious.github.io/
 echo "Checking Github repo"
 git pull
@@ -31,7 +31,7 @@ then
   temp=$(cat /sys/bus/w1/devices/28-01145316e8aa/w1_slave | sed -n 's/^.*\(t=[^ ]*\).*/\1/p' | sed 's/t=//' | awk '{x=$1}END{print(x/1000)}')
 fi
 
-python3 temp.py >> $log
+sudo python3 temp.py >> $log
 
 echo "writing log file"
 echo "$(date '+%Y-%m-%d_%T'), $temp" >> temp.log
