@@ -49,5 +49,5 @@ echo "Uploading log to zennercloud"
 curl -u rpi-huette:ueberdenwolken -T $log "https://cloud.alexanderkutschera.com/remote.php/dav/files/rpi-huette/RPi_Fotos/log/$log"
 # shutdown after 10 Minutes
 rm $log
-sleep 5m
+sleep 50m
 sudo shutdown
