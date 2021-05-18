@@ -31,10 +31,11 @@ then
   temp=$(cat /sys/bus/w1/devices/28-01145316e8aa/w1_slave | sed -n 's/^.*\(t=[^ ]*\).*/\1/p' | sed 's/t=//' | awk '{x=$1}END{print(x/1000)}')
 fi
 
-sudo python3 temp.py >> $log
-
 echo "writing log file"
 echo "$(date '+%Y-%m-%d_%T'), $temp" >> temp.log
+
+echo "creating temperature plot"
+sudo python3 temp.py >> $log
 
 bash upload.sh $temp "$date_time_exec.jpg" >> $log # start uploading mechanism
 
