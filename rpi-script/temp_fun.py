@@ -108,5 +108,3 @@ def over_time(temp_data):
                     top=0.8,
                     wspace=0.4,
                     hspace=0.4)
-
-    plt.savefig('temp_plot.png')
