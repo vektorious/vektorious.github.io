@@ -1,42 +1,11 @@
-# libraries
-import matplotlib.pyplot as plt
-#plt.style.use('seaborn-whitegrid')
-import numpy as np
-import pandas as pd
-import matplotlib.dates as mdates
-from matplotlib.dates import DateFormatter
-import seaborn as sns
-from plotnine import ggplot, geom_bar, aes, geom_point
-
-temp_data = pd.read_csv("temp.log", header=None)
-temp_data.columns = ("Date", "Temp")
-temp_data["Date"] = pd.to_datetime(temp_data["Date"], format="%Y-%m-%d_%H:%M:%S")
-temp_data["hour"] = temp_data['Date'].dt.hour
-temp_data["month"] = temp_data['Date'].dt.month_name()
-
-monthly = pd.DataFrame(columns=['min_temp', 'max_temp', 'av_temp', 'month', 'year'])
-
-
-years = np.unique(temp_data["Date"].dt.year)
-for year in years:
-    year_data = temp_data[temp_data["Date"].dt.year == year]
-    year_months = year_data["Date"].dt.month
-
-    months = np.unique(year_data["Date"].dt.month)
-    for month in months:
-        month_data = year_data[year_data["Date"].dt.month == month]
-        min = month_data["Temp"].min()
-        max = month_data["Temp"].max()
-        av = np.average(month_data["Temp"])
-        monthly = monthly.append({'min_temp': min, 'max_temp': max,
-            'av_temp': av, 'month': month, 'year': year}, ignore_index=True)
-
-print(monthly)
-
-#ggplot(monthly, aes('month','max_temp')) + geom_point()
 def over_time(temp_data):
     if temp_data is None:
         raise ValueError("Please provide some data")
+
+    import matplotlib.pyplot as plt
+    import numpy as np
+    import matplotlib.dates as mdates
+    from matplotlib.dates import DateFormatter
 
     # Split data
     temp_data_morning = temp_data.query("hour < 12")
@@ -44,7 +13,7 @@ def over_time(temp_data):
     temp_data_night = temp_data.query("hour > 18")
 
     # Create figure and plot space
-    fig, ax = plt.subplots(3, 1,figsize=(18, 20))
+    fig, ax = plt.subplots(2, 1,figsize=(18, 20))
 
     ##### First plot
     # Add x-axis and y-axis
@@ -119,19 +88,19 @@ def over_time(temp_data):
 
     ax[1].legend(frameon=False, fontsize=15)
 
-    sns.boxplot(ax=ax[2],x=temp_data["month"], y=temp_data["Temp"], color="midnightblue")
-    ax[2].set(xlabel="",
-           ylabel="Temperature [°C]",
-           title="Monthly Temperature Range")
+    #sns.boxplot(ax=ax[2],x=temp_data["month"], y=temp_data["Temp"], color="midnightblue")
+    #ax[2].set(xlabel="",
+    #       ylabel="Temperature [°C]",
+    #       title="Monthly Temperature Range")
 
 
-    ax[2].yaxis.label.set_size(15)
-    ax[2].title.set_size(20)
+    #ax[2].yaxis.label.set_size(15)
+    #ax[2].title.set_size(20)
 
-    ax[2].yaxis.grid(True)
-    ax[2].tick_params(axis='x', which='major', labelsize=15, direction='out', length=8, width=1, pad=15)
-    ax[2].tick_params(axis='y', which='major', labelsize=15, direction='out', grid_alpha=0.5, length=0, width=0, pad=15)
-    ax[2].tick_params(axis='both', which='minor', labelsize=15,  direction='out', length=0, width=0, pad=15)
+    #ax[2].yaxis.grid(True)
+    #ax[2].tick_params(axis='x', which='major', labelsize=15, direction='out', length=8, width=1, pad=15)
+    #ax[2].tick_params(axis='y', which='major', labelsize=15, direction='out', grid_alpha=0.5, length=0, width=0, pad=15)
+    #ax[2].tick_params(axis='both', which='minor', labelsize=15,  direction='out', length=0, width=0, pad=15)
 
     plt.subplots_adjust(left=0.1,
                     bottom=0.1,
@@ -140,7 +109,4 @@ def over_time(temp_data):
                     wspace=0.4,
                     hspace=0.4)
 
-over_time(temp_data)
-
-#ax[1].bar(monthly[0])
-plt.savefig('temp_plot.png')
+    plt.savefig('temp_plot.png')
