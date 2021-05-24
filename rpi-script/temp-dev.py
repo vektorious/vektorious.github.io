@@ -119,7 +119,7 @@ def over_time(temp_data):
 
     ax[1].legend(frameon=False, fontsize=15)
 
-    sns.boxplot(ax=ax[2],x=temp_data["month"], y=temp_data["Temp"], color="midnightblue")
+    sns.boxplot(ax=ax[2],x=temp_data["month"], y=temp_data["Temp"], color="midnightblue", medianprops=dict(color="white"))
     ax[2].set(xlabel="",
            ylabel="Temperature [°C]",
            title="Monthly Temperature Range")
