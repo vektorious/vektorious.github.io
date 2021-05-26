@@ -1,0 +1,19 @@
+Log File - Wed 26 May 2021 04:11:14 PM CEST
+Taking picture 2021-05-26_161114.jpg
+Had to remeasure the temperature
+successfully generated temperature plot
+starting upload scipt at 16:12
+The temperature is: 13.812°C
+Copying the template file
+Opening folder in zennercloud
+This might cause an error if the folder already exists
+<?xml version="1.0" encoding="utf-8"?>
+<d:error xmlns:d="DAV:" xmlns:s="http://sabredav.org/ns">
+  <s:exception>Sabre\DAV\Exception\MethodNotAllowed</s:exception>
+  <s:message>The resource you tried to create already exists</s:message>
+</d:error>
+Uploading image to zennercloud
+../assets/img/huette.jpg 2592x1944 24bit N Exif  [OK] 2598646 --> 510141 bytes (80.37%), optimized.
+removing original img
+Replacing old huette.md file
+Committing changes
