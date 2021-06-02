@@ -62,9 +62,9 @@ def over_time(temp_data):
     ax[1].title.set_size(20)
 
 
-    # Sho the last 30 days
-    datemin = np.datetime64(temp_data['Date'].iloc[-1], 'D') -np.timedelta64(40, 'D')
-    datemax = np.datetime64(temp_data['Date'].iloc[-1], 'D')
+    # Sho the last 40 days
+    datemin = np.datetime64(temp_data['Date'].iloc[-1], 'D') - np.timedelta64(40, 'D')
+    datemax = np.datetime64(temp_data['Date'].iloc[-1], 'D') + np.timedelta64(1, 'D')
 
     ax[1].set_xlim(datemin, datemax)
 
