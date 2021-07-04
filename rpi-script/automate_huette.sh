@@ -28,7 +28,14 @@ echo "The temperature is $temp"
 if [ $temp == "85" ]
 then
   echo "Had to remeasure the temperature" >> $log
+  sleep 1s
   temp=$(cat /sys/bus/w1/devices/28-01145316e8aa/w1_slave | sed -n 's/^.*\(t=[^ ]*\).*/\1/p' | sed 's/t=//' | awk '{x=$1}END{print(x/1000)}')
+  if [ $temp == "85" ]
+  then
+    echo "Had to remeasure the temperature again" >> $log
+    sleep 1s
+    temp=$(cat /sys/bus/w1/devices/28-01145316e8aa/w1_slave | sed -n 's/^.*\(t=[^ ]*\).*/\1/p' | sed 's/t=//' | awk '{x=$1}END{print(x/1000)}')
+  fi
 fi
 
 echo "writing log file"
