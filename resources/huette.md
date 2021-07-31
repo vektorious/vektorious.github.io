@@ -6,7 +6,7 @@ image: '/assets/img/'
 description: 'Live image from the Austrian alps'
 twitter_text: ' '
 ---
-## Latest image from 31 July 2021 at 10:11
+## Latest image from 31 July 2021 at 16:11
 <div class="huette">
   <div class="huette-image">
     <img src="{{ "/assets/img/huette.jpg" | prepend: site.baseurl }}">
