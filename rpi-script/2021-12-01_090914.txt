@@ -1,0 +1,13 @@
+Log File - Wed 01 Dec 2021 09:09:14 AM CET
+Taking picture 2021-12-01_090914.jpg
+successfully generated temperature plot
+starting upload scipt at  9:10
+The temperature is: 10.25°C
+Copying the template file
+Opening folder in zennercloud
+This might cause an error if the folder already exists
+Uploading image to zennercloud
+../assets/img/huette.jpg 2592x1944 24bit N Exif  [OK] 2455278 --> 503438 bytes (79.50%), optimized.
+removing original img
+Replacing old huette.md file
+Committing changes
