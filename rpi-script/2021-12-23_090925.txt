@@ -1,8 +1,9 @@
-Log File - Wed 22 Dec 2021 03:09:26 PM CET
-Taking picture 2021-12-22_150926.jpg
+Log File - Thu 23 Dec 2021 09:09:25 AM CET
+Taking picture 2021-12-23_090925.jpg
+Had to remeasure the temperature
 successfully generated temperature plot
-starting upload scipt at 15:10
-The temperature is: 4.25°C
+starting upload scipt at  9:10
+The temperature is: 6.375°C
 Copying the template file
 Opening folder in zennercloud
 This might cause an error if the folder already exists
@@ -12,7 +13,7 @@ This might cause an error if the folder already exists
   <s:message>The resource you tried to create already exists</s:message>
 </d:error>
 Uploading image to zennercloud
-../assets/img/huette.jpg 2592x1944 24bit N Exif  [OK] 3112192 --> 506929 bytes (83.71%), optimized.
+../assets/img/huette.jpg 2592x1944 24bit N Exif  [OK] 2382437 --> 512532 bytes (78.49%), optimized.
 removing original img
 Replacing old huette.md file
 Committing changes
