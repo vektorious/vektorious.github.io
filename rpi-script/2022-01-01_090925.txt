@@ -1,0 +1,14 @@
+Log File - Sat 01 Jan 2022 09:09:25 AM CET
+Taking picture 2022-01-01_090925.jpg
+Had to remeasure the temperature
+successfully generated temperature plot
+starting upload scipt at  9:10
+The temperature is: 10.562°C
+Copying the template file
+Opening folder in zennercloud
+This might cause an error if the folder already exists
+Uploading image to zennercloud
+../assets/img/huette.jpg 2592x1944 24bit N Exif  [OK] 2339309 --> 500891 bytes (78.59%), optimized.
+removing original img
+Replacing old huette.md file
+Committing changes
