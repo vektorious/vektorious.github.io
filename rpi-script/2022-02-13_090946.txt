@@ -1,13 +1,13 @@
-Log File - Sat 12 Feb 2022 03:09:43 PM CET
-Taking picture 2022-02-12_150943.jpg
+Log File - Sun 13 Feb 2022 09:09:46 AM CET
+Taking picture 2022-02-13_090946.jpg
 successfully generated temperature plot
-starting upload scipt at 15:11
-The temperature is: 6.562°C
+starting upload scipt at  9:11
+The temperature is: 6.312°C
 Copying the template file
 Opening folder in zennercloud
 This might cause an error if the folder already exists
 Uploading image to zennercloud
-../assets/img/huette.jpg 2592x1944 24bit N Exif  [OK] 3107486 --> 512517 bytes (83.51%), optimized.
+../assets/img/huette.jpg 2592x1944 24bit N Exif  [OK] 2592387 --> 509875 bytes (80.33%), optimized.
 removing original img
 Replacing old huette.md file
 Committing changes
