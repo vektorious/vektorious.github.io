@@ -1,9 +1,8 @@
-Log File - Tue 22 Mar 2022 09:09:50 AM CET
-Taking picture 2022-03-22_090950.jpg
-Had to remeasure the temperature
+Log File - Tue 22 Mar 2022 03:09:50 PM CET
+Taking picture 2022-03-22_150950.jpg
 successfully generated temperature plot
-starting upload scipt at  9:11
-The temperature is: 9.75°C
+starting upload scipt at 15:11
+The temperature is: 10.5°C
 Copying the template file
 Opening folder in zennercloud
 This might cause an error if the folder already exists
@@ -18,7 +17,7 @@ Uploading image to zennercloud
   <s:exception>Sabre\DAV\Exception\NotAuthenticated</s:exception>
   <s:message>No public access to this resource., Username or password was incorrect, No 'Authorization: Bearer' header found. Either the client didn't send one, or the server is mis-configured, Username or password was incorrect</s:message>
 </d:error>
-../assets/img/huette.jpg 2592x1944 24bit N Exif  [OK] 2746588 --> 512436 bytes (81.34%), optimized.
+../assets/img/huette.jpg 2592x1944 24bit N Exif  [OK] 3098874 --> 517832 bytes (83.29%), optimized.
 removing original img
 Replacing old huette.md file
 Committing changes
