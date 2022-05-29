@@ -6,13 +6,13 @@ image: '/assets/img/'
 description: 'Live image from the Austrian alps'
 twitter_text: ' '
 ---
-## Latest image from 29 May 2022 at 10:10
+## Latest image from 29 May 2022 at 16:10
 <div class="huette">
   <div class="huette-image">
     <img src="{{ "/assets/img/huette.jpg" | prepend: site.baseurl }}">
   </div>
   <div class="huette-text">
-        <h2>Current Temperature: 2.812°C</h2>
+        <h2>Current Temperature: 4°C</h2>
         <p>A solar powered raspberry pi left alone in the wild is sending daily images and temperature data to this website. It should give you an impression about the current weather in the "Brixental".</p>
 
   </div>
