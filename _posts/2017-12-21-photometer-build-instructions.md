@@ -10,7 +10,7 @@ category: research
 <img align="right" src="https://raw.githubusercontent.com/vektorious/test_tube_photometer/master/pictures/cell_cover_fused.png" style="width: 500px ;" hspace="20" vspace="20"/>
 
 This is the second part of the complete test tube photometer building instructions: The building and wiring instructions.
-But if you want you can go back to the [the shopping list](https://alexanderkutschera.com/2017/12/09/photometer-shopping-list.html). Here you find instructions for building the test tube photometer. If something is not completely clear to you, let us know and we will help you!
+But if you want you can go back to the [the shopping list](https://alexanderkutschera.com/research/photometer-shopping-list.html). Here you find instructions for building the test tube photometer. If something is not completely clear to you, let us know and we will help you!
 
 ### Build the measuring cell ###
 - **Assemble the housing**<br>

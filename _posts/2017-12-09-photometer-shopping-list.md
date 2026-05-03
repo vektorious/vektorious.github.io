@@ -9,7 +9,7 @@ category: research
 ---
 <img align="right" src="https://raw.githubusercontent.com/vektorious/test_tube_photometer/master/pictures/sketch.png" style="width: 500px ;" hspace="20" vspace="20"/>
 This is the first part of the complete test tube photometer building instructions: The Shopping List.
-But if you want you can directly go to the [building and wiring instructions](https://alexanderkutschera.com/2017/12/21/photometer-build-instructions.html).
+But if you want you can directly go to the [building and wiring instructions](https://alexanderkutschera.com/research/photometer-build-instructions.html).
 
 Here you find a list of all the things you will need to build the test tube photometer, which we describe in our recent [paper](https://link.springer.com/article/10.1007%2Fs00284-017-1370-3). Additionally you will need standard electronics equipment including wires, resistors, breadboard for testing, soldering equipment and maybe some soldering experience.
 
